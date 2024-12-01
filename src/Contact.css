@@ -1,0 +1,20 @@
+.contact {
+  padding: 20px;
+  height: 655px;
+  width: 82%;
+  text-align: center;
+  position: absolute;
+  /* margin-top: 3rem; */
+  /* border: 1px solid black; */
+  margin-top: 90rem;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h1 {
+  font-size: 3rem; /* Adjust text size */
+  font-weight: bold;
+  margin-top: 4rem;
+}

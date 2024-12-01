@@ -1,0 +1,62 @@
+.info-left {
+  height: 500px;
+  width: 600px;
+  /* border: solid 1px #e0b1cb; */
+  border-radius: 25px;
+  /* flex: 1;  Take up equal space as .info-right */
+  display: flex; /* Enable alignment of content inside */
+  justify-content: center; /* Center horizontally */
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  text-align: center;
+  box-shadow: 0 4px 12px #5e548e;
+  backdrop-filter: blur(10px);
+  gap: 2rem;
+}
+
+.info-right {
+  height: 500px;
+  width: 600px;
+  /* border: solid 1px #e0b1cb; */
+  border-radius: 25px;
+  /* flex: 1;  Take up equal space as .info-right */
+  display: flex; /* Enable alignment of content inside */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+}
+
+.info {
+  width: 100%;
+  display: inline-flex;
+  margin-top: 2rem;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+}
+/* .info {
+  display: flex; /* Flexbox for aligning left and right divs 
+  justify-content: space-between; /* Space out .info-left and .info-right 
+  align-items: center; /* Center items vertically
+  padding: 20px; /* Optional: Add padding around the content 
+  background-color: #f9f9f9; /* Optional: Light background 
+  border: 1px solid #ddd; /* Optional: Border for visual clarity 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth 
+} */
+.info-left p {
+  font-size: 30px; /* Adjust the size for readability */
+  font-weight: 700; /* Makes the text bold */
+  color: #e0b1cb; /* Dark gray for better readability */
+  line-height: 1.6; /* Improves spacing between lines */
+  /* Slight spacing between letters for clarity */
+  text-align: center; /* Aligns text neatly (optional) */
+  margin-bottom: 16px; /* Adds space below the paragraph */
+
+  /* Optional: Hover effect for interactivity */
+}
+
+.icons {
+  display: inline-flex;
+  justify-content: center;
+  gap: 25px;
+}

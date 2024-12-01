@@ -1,0 +1,119 @@
+/* .cards {
+  height: 500px;
+  width: 80%;
+  text-align: center;
+  border: 1px solid black;
+} */
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.carousel-wrapper {
+  overflow: hidden; /* Ensures only the active card is visible */
+  width: 50%;
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+
+.card {
+  position: absolute;
+  width: 80%;
+  height: 95%;
+  display: flex;
+  /* align-items: center;*/
+  justify-content: center;
+  background: rgba(35, 25, 66, 0.9); /* Glass-like background */
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease; /* Smooth animation */
+  background-color: #2d1d60;
+}
+
+.card.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2; /* Brings active card to the front */
+  border: 1px solid black;
+}
+
+.card.left {
+  opacity: 0;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.card.right {
+  opacity: 0;
+  transform: translateX(100%);
+  z-index: 1;
+}
+
+.card-content {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 10px; /* Space between image and description */
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-image img {
+  width: 490px;
+  height: 250px;
+  object-fit: fill;
+  flex: 1;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+/* .card-image {
+  height: 100px;
+} */
+
+.card-description {
+  /* border: 1px soild black; */
+  font-size: 1rem;
+  text-align: justify;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  /* margin: 10px; */
+  overflow-wrap: break-word; /* Breaks long words to fit within the width */
+  word-wrap: break-word; /* Ensures word-breaking compatibility */
+  word-break: break-word; /* Forces breaks for long words */
+  white-space: Normal; /* Allows text to wrap naturally */
+  max-width: 480px; /* Optional: Restricts the width of the description box */
+  line-height: 1.5; /* Adjusts spacing between lines for readability */
+}
+
+.scroll-button {
+  background: #1f1639;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.scroll-button:hover {
+  background: #3b2f6e;
+}

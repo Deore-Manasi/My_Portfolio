@@ -1,0 +1,89 @@
+/* .Topbar {
+  display: flex;
+  justify-content: space-between; /* Space out elements, pushing child to the right 
+  align-items: center; /* Optional: Aligns items vertically 
+  padding: 10px; /* Optional: Adds padding 
+  height: 50px;
+  /* Optional: Visual aid 
+  background-color: #5e548e;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(100, 149, 237, 0.2); /* Cornflower Blue Shadow 
+
+  margin-top: 0.5rem;
+}
+.leftbar {
+  justify-self: end;
+}
+.logo {
+  margin-left: 50px;
+}
+ */
+
+/* Base styles for Topbar */
+.Topbar {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Push children to opposite ends */
+  align-items: center; /* Vertically align items */
+  padding: 10px; /* Add padding for breathing room */
+  background-color: #5e548e; /* Optional: Light background */
+  /* margin-top: 0.5rem; */
+  position: sticky; /* Optional: Make navbar sticky on scroll */
+  /* top: 0; */
+  z-index: 1000; /* Ensures it stays above other content */
+  padding: 10px 0;
+  height: 50px;
+  top: 0; /* Sets it to stick at the very top */
+  width: 100%; /* Makes it span the full width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(100, 149, 237, 0.2);
+  position: fixed;
+  /* top: 0; */
+  left: 0;
+  /* width: 100%; */
+}
+
+/* Styling for the logo */
+.Logo {
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold; /* Bold font for emphasis */
+  /* Dark text */
+  border: solid 1px #2f0f36;
+  width: 300px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #4a3d87;
+}
+/* Styling for the logo */
+.Name {
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold; /* Bold font for emphasis */
+  margin-left: 100px;
+  /* Dark text */
+}
+.Name a {
+  text-decoration: none; /* Remove underlines */
+  color: #f5f1f1; /* Dark text  */
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold; /* Medium weight */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+.Name a:hover {
+  color: #2f0f36;
+}
+/* Styling for leftbar */
+.leftbar {
+  display: flex; /* Arrange links in a row */
+  gap: 25px; /* Space between links */
+  margin-right: 100px;
+}
+
+.leftbar a {
+  text-decoration: none; /* Remove underlines */
+  color: #f5f1f1; /* Dark text  */
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold; /* Medium weight */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.leftbar a:hover {
+  color: #2f0f36; /* Change to an accent color on hover */
+}

@@ -1,0 +1,110 @@
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(to right, #2e155e, #7c52b2, #b16cc6);
+  border-radius: 25px;
+  color: #2b0733;
+  width: 82%;
+  height: 400px;
+  color: #25032c;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements horizontally */
+  margin-left: 20px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.contact-left h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.contact-left p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.contact-left button {
+  /* height: 45px;
+  width: 140px; */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-right: 25px;
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #1f0432;
+  border-radius: 25px;
+  background-color: #4d0a7d;
+}
+.contact-left button:hover {
+  background: #08ca35be;
+}
+
+.social-icons a {
+  font-size: 3rem;
+  margin-right: 25px;
+  color: #240337;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.contact-right {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4d0a7d;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form button {
+  padding: 10px;
+  background: #2e0248;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+form button:hover {
+  background: #08ca35be;
+}
+
+/* #sheetdb-form {
+  flex: 1;
+  width: 100%;
+  min-height: 300px; /* Ensures form container is visible 
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle transparency 
+  padding: 20px;
+  border: 1px solid #ccc; /* Optional border for visibility 
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some depth 
+} */

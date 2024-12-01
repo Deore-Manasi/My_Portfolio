@@ -1,0 +1,15 @@
+.about {
+  padding: 20px;
+  height: 655px;
+  width: 82%;
+  text-align: center;
+  /* border: 1px solid black; */
+  position: absolute;
+  /* margin-top: 3rem; */
+  /* border: 1px solid black; */
+}
+.about h1 {
+  font-size: 3rem; /* Adjust text size */
+  font-weight: bold;
+  margin-top: 4rem;
+}

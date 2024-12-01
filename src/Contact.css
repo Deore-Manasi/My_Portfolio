@@ -18,3 +18,14 @@
   font-weight: bold;
   margin-top: 4rem;
 }
+/* For mobile screens (480px and below) */
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 140rem;
+  }
+}
+@media (max-width: 475px) {
+  .contact {
+    margin-top: 150rem;
+  }
+}

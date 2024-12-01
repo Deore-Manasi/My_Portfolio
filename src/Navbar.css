@@ -25,7 +25,7 @@
   justify-content: space-between; /* Push children to opposite ends */
   align-items: center; /* Vertically align items */
   padding: 10px; /* Add padding for breathing room */
-  background-color: #5e548e; /* Optional: Light background */
+  background-color: #685ca4; /* Optional: Light background */
   /* margin-top: 0.5rem; */
   position: sticky; /* Optional: Make navbar sticky on scroll */
   /* top: 0; */
@@ -86,4 +86,53 @@
 
 .leftbar a:hover {
   color: #2f0f36; /* Change to an accent color on hover */
+}
+
+/* For smaller screens (Mobile) */
+@media (max-width: 768px) {
+  /* Stack logo and name on top of each other */
+
+  .Logo {
+    font-size: 16px;
+    width: 200px;
+  }
+
+  /* Adjust Name layout */
+  .Name {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  /* Adjust leftbar layout */
+}
+
+/* For very small screens (e.g., smaller phones) */
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .Topbar {
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Align them to the center */
+    align-items: flex-start;
+    height: auto; /* Adjust height for stacked elements */
+    padding: 15px;
+  }
+
+  .Logo {
+    font-size: 14px; /* Adjust font size */
+    width: 150px; /* Smaller logo width */
+  }
+
+  .Name {
+    font-size: 16px; /* Adjust Name font size */
+  }
+
+  .leftbar {
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px; /* Reduce space between links */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .leftbar a {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
 }

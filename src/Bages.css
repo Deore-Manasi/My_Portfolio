@@ -1,3 +1,10 @@
+/* Base styles for about section */
+.about {
+  text-align: center;
+  margin-top: 100px; /* Adjust top margin to avoid overlap with navbar */
+  padding: 20px;
+}
+
 .bages {
   display: flex;
   justify-content: space-between; /* Distributes items with space between them */
@@ -85,4 +92,66 @@
   font-size: 2rem; /* Adjust text size */
   font-weight: bold;
   margin: 0; /* Remove default paragraph margin */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .bages {
+    width: 90%; /* Reduce width to fit smaller screens */
+    gap: 15px; /* Adjust spacing between items */
+    margin-left: 120px;
+  }
+
+  .bg1 {
+    height: 160px; /* Slightly smaller badges */
+    width: 160px;
+  }
+
+  .bg1 p {
+    font-size: 1.8rem; /* Slightly smaller text */
+  }
+}
+
+@media (max-width: 768px) {
+  .bages {
+    flex-wrap: wrap; /* Stack badges vertically */
+    flex-direction: column;
+    justify-content: center; /* Center-align items */
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .bg1 {
+    height: 150px; /* Smaller badges */
+    width: 150px;
+    margin: 10px 5px; /* Adjust margins */
+  }
+
+  .bg1 p {
+    font-size: 1.6rem; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    margin-top: 70px; /* Ensure proper spacing from navbar */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .bages {
+    width: 80%; /* Use full width */
+    gap: 10px; /* Reduce spacing between badges */
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .bg1 {
+    height: 120px; /* Smaller badges for mobile */
+    width: 120px;
+    margin: 5px; /* Compact margins */
+  }
+
+  .bg1 p {
+    font-size: 1.4rem; /* Reduce font size */
+  }
 }

@@ -1,10 +1,6 @@
-/* .cards {
-  height: 500px;
-  width: 80%;
-  text-align: center;
-  border: 1px solid black;
-} */
+/* Existing styles remain unchanged */
 
+/* Carousel container */
 .carousel-container {
   display: flex;
   align-items: center;
@@ -23,7 +19,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid black; */
   padding: 10px;
 }
 
@@ -32,7 +27,6 @@
   width: 80%;
   height: 95%;
   display: flex;
-  /* align-items: center;*/
   justify-content: center;
   background: rgba(35, 25, 66, 0.9); /* Glass-like background */
   color: white;
@@ -83,18 +77,13 @@
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
-/* .card-image {
-  height: 100px;
-} */
 
 .card-description {
-  /* border: 1px soild black; */
   font-size: 1rem;
   text-align: justify;
   color: #ffffff;
   display: flex;
   justify-content: center;
-  /* margin: 10px; */
   overflow-wrap: break-word; /* Breaks long words to fit within the width */
   word-wrap: break-word; /* Ensures word-breaking compatibility */
   word-break: break-word; /* Forces breaks for long words */
@@ -116,4 +105,188 @@
 
 .scroll-button:hover {
   background: #3b2f6e;
+}
+
+/* Responsive Styles for smaller screens */
+
+/* For tablets and smaller desktops (1024px and below) */
+
+@media (max-width: 1300px) {
+  .carousel-wrapper {
+    width: 520px; /* Reduce width for better fit on smaller screens */
+    height: 450px; /* Adjust height */
+  }
+
+  .card {
+    width: 90%; /* Increase card width for better fit */
+    height: 90%; /* Adjust height */
+  }
+
+  .card-image img {
+    max-width: 400px; /* Restrict image width */
+  }
+
+  .card-description {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  .scroll-button {
+    font-size: 1.2rem; /* Adjust button size */
+    padding: 8px 15px; /* Smaller padding */
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel-wrapper {
+    width: 520px; /* Reduce width for better fit on smaller screens */
+    height: 450px; /* Adjust height */
+  }
+
+  .card {
+    width: 90%; /* Increase card width for better fit */
+    height: 90%; /* Adjust height */
+  }
+
+  .card-image img {
+    max-width: 400px; /* Restrict image width */
+  }
+
+  .card-description {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  .scroll-button {
+    font-size: 1.2rem; /* Adjust button size */
+    padding: 8px 15px; /* Smaller padding */
+  }
+}
+
+/* For tablets and mobile screens (768px and below) */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    width: 80%; /* Increase width for better fit */
+    height: 550px; /* Reduce height */
+    /* margin-top: 20rem; */
+  }
+
+  .card {
+    width: 95%; /* Full width for cards */
+    height: 85%; /* Adjust height */
+  }
+
+  .card-image img {
+    max-width: 400px; /* Restrict image width for better fit */
+  }
+
+  .card-description {
+    font-size: 0.85rem; /* Slightly smaller text */
+  }
+
+  .scroll-button {
+    font-size: 1.2rem; /* Smaller font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 680px) {
+  .carousel-wrapper {
+    width: 500px; /* Increase width for better fit */
+    height: 550px; /* Reduce height */
+    /* margin-top: 20rem; */
+  }
+
+  .card {
+    width: 95%; /* Full width for cards */
+    height: 85%; /* Adjust height */
+  }
+
+  .card-image img {
+    max-width: 300px; /* Restrict image width for better fit */
+  }
+
+  .card-description {
+    font-size: 0.85rem; /* Slightly smaller text */
+    max-width: 300px;
+  }
+
+  .scroll-button {
+    font-size: 1.2rem; /* Smaller font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+/* For mobile screens (480px and below) */
+@media (max-width: 560px) {
+  .carousel-wrapper {
+    width: 100%; /* Full width on mobile */
+    height: 550px; /* Reduce height further */
+  }
+
+  .card {
+    width: 95%; /* Full width for cards */
+    height: 80%; /* Adjust height to fit */
+  }
+
+  .card-image img {
+    max-width: 250px; /* Further restrict image width */
+  }
+
+  .card-description {
+    font-size: 0.8rem; /* Smaller font size */
+  }
+
+  .scroll-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 5px 10px; /* Compact button padding */
+  }
+}
+
+@media (max-width: 482px) {
+  .carousel-wrapper {
+    width: 100%; /* Full width on mobile */
+    height: 550px; /* Reduce height further */
+    margin-top: 2rem;
+  }
+
+  .card {
+    width: 95%; /* Full width for cards */
+    height: 80%; /* Adjust height to fit */
+  }
+
+  .card-image img {
+    max-width: 250px; /* Further restrict image width */
+  }
+
+  .card-description {
+    font-size: 0.8rem; /* Smaller font size */
+  }
+
+  .scroll-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 5px 10px; /* Compact button padding */
+  }
+}
+@media (max-width: 475px) {
+  .carousel-wrapper {
+    width: 100%; /* Full width on mobile */
+    height: 650px; /* Reduce height further */
+  }
+
+  .card {
+    width: 95%; /* Full width for cards */
+    height: 80%; /* Adjust height to fit */
+  }
+
+  .card-image img {
+    max-width: 200px; /* Further restrict image width */
+  }
+
+  .card-description {
+    font-size: 0.8rem; /* Smaller font size */
+  }
+
+  .scroll-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 5px 10px; /* Compact button padding */
+  }
 }

@@ -28,3 +28,9 @@
   margin-top: 4rem;
   /* margin-bottom: 4rem; */
 }
+/* For mobile screens (480px and below) */
+@media (max-width: 768px) {
+  .project {
+    margin-top: 96rem;
+  }
+}

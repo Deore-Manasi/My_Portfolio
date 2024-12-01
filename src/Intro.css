@@ -1,62 +1,133 @@
+/* Base styles for .info */
+.info {
+  width: 100%;
+  display: inline-flex;
+  margin-top: 70px; /* Add margin to account for navbar height */
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+}
+
 .info-left {
   height: 500px;
   width: 600px;
-  /* border: solid 1px #e0b1cb; */
   border-radius: 25px;
-  /* flex: 1;  Take up equal space as .info-right */
-  display: flex; /* Enable alignment of content inside */
-  justify-content: center; /* Center horizontally */
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: center; /* Center vertically */
+  align-items: center;
   text-align: center;
   box-shadow: 0 4px 12px #5e548e;
   backdrop-filter: blur(10px);
   gap: 2rem;
 }
 
+.info-left p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #e0b1cb;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
 .info-right {
   height: 500px;
   width: 600px;
-  /* border: solid 1px #e0b1cb; */
   border-radius: 25px;
-  /* flex: 1;  Take up equal space as .info-right */
-  display: flex; /* Enable alignment of content inside */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  text-align: center;
-}
-
-.info {
-  width: 100%;
-  display: inline-flex;
-  margin-top: 2rem;
+  display: flex;
   justify-content: center;
-  padding: 20px;
-  gap: 50px;
-}
-/* .info {
-  display: flex; /* Flexbox for aligning left and right divs 
-  justify-content: space-between; /* Space out .info-left and .info-right 
-  align-items: center; /* Center items vertically
-  padding: 20px; /* Optional: Add padding around the content 
-  background-color: #f9f9f9; /* Optional: Light background 
-  border: 1px solid #ddd; /* Optional: Border for visual clarity 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth 
-} */
-.info-left p {
-  font-size: 30px; /* Adjust the size for readability */
-  font-weight: 700; /* Makes the text bold */
-  color: #e0b1cb; /* Dark gray for better readability */
-  line-height: 1.6; /* Improves spacing between lines */
-  /* Slight spacing between letters for clarity */
-  text-align: center; /* Aligns text neatly (optional) */
-  margin-bottom: 16px; /* Adds space below the paragraph */
-
-  /* Optional: Hover effect for interactivity */
+  align-items: center;
+  text-align: center;
 }
 
 .icons {
   display: inline-flex;
   justify-content: center;
   gap: 25px;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .info {
+    flex-direction: column; /* Stack left and right sections */
+    gap: 20px; /* Reduce gap between sections */
+    padding: 15px; /* Reduce padding */
+    margin-top: 500px; /* Adjust to account for navbar changes */
+  }
+
+  .info-left,
+  .info-right {
+    width: 90%; /* Reduce width for smaller screens */
+    height: auto; /* Let height adjust based on content */
+  }
+
+  .info-left p {
+    font-size: 24px; /* Reduce text size for readability */
+  }
+
+  .icons {
+    gap: 15px; /* Reduce gap between icons */
+  }
+
+  .icons img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+  }
+}
+
+/* For mobile screens (phones) */
+@media (max-width: 768px) {
+  .info {
+    padding: 10px; /* Further reduce padding */
+    gap: 15px; /* Narrow the gap */
+    margin-top: 20rem; /* Adjust for consistent spacing */
+    align-items: center;
+  }
+
+  .info-left p {
+    font-size: 20px; /* Further reduce text size */
+    line-height: 1.4; /* Adjust line spacing */
+  }
+
+  .icons img {
+    width: 25px; /* Further adjust icon size */
+    height: 25px;
+  }
+
+  .info-left,
+  .info-right {
+    width: 100%; /* Full width for mobile */
+    text-align: center;
+  }
+
+  .info-right img {
+    width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Additional Adjustments for Very Small Screens */
+@media (max-width: 480px) {
+  .info {
+    flex-direction: column; /* Ensure stacking */
+    padding: 5px;
+    margin-top: 280px; /* Final adjustment for navbar alignment */
+  }
+
+  .info-left p {
+    font-size: 18px; /* Compact font size */
+    line-height: 1.2;
+  }
+
+  .icons img {
+    width: 20px; /* Final reduction for icons */
+    height: 20px;
+  }
 }
